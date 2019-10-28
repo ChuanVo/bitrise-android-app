@@ -23,7 +23,7 @@ const kobitonServerConfig = {
 
 let driver
 
-const filePath = `${process.env.SOURCE_APP_DIR}`
+const filePath = `./ApiDemos-debug.apk`
 const stats = fs.statSync(filePath);
 const fileName = path.parse(filePath).base
   const inputBody = {
