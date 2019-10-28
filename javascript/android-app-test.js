@@ -23,7 +23,7 @@ const kobitonServerConfig = {
 
 let driver
 
-const filePath = `../app/${process.env.BITRISE_APK_PATH}`
+const filePath = process.env.BITRISE_APK_PATH
 const stats = fs.statSync(filePath);
 const fileName = path.parse(filePath).base
   const inputBody = {
