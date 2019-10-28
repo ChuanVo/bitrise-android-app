@@ -44,6 +44,8 @@ if (!username || !apiKey) {
 describe('Android App sample',() => {
   before(async () => {
 
+    console.log('before try')
+
   try {
     const getUrl = await new Promise((resolve, reject) => {
       request({
@@ -59,7 +61,7 @@ describe('Android App sample',() => {
         resolve(body);
       })
     })
-
+    console.log('before createReadStream')
     await new Promise((resolve, reject) => {
       fs.createReadStream(filePath).pipe(
           request({
@@ -79,6 +81,7 @@ describe('Android App sample',() => {
           })
       );
     })
+    console.log('before createReadVersion')
 
     const createAppVersion = await new Promise((resolve, reject) => {
       request({
@@ -98,6 +101,7 @@ describe('Android App sample',() => {
           resolve(body)
       })
     })
+    console.log('after createReadversion')
 
     const app_id = createAppVersion.appId
 
