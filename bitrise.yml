@@ -12,7 +12,6 @@ workflows:
     steps:
     - git-clone@4.0.17: {}
     - android-build: {}
-    - deploy-to-bitrise-io@1.9.2: {}
     - script@1.1.5:
         inputs:
         - content: |
@@ -22,6 +21,7 @@ workflows:
             cd sample-test-script/javascript
             npm install
             npm run android-app-test
+    - deploy-to-bitrise-io@1.9.2: {}
 
 meta:
   bitrise.io:
