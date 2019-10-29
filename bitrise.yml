@@ -22,7 +22,6 @@ workflows:
             cd sample-test-script/javascript
             npm install
             npm run android-app-test
-            echo "=>>>>>>>>>>>>>>>>>>>>>DONE<<<<<<<<<<<<<<<<<<="
 
 meta:
   bitrise.io:
