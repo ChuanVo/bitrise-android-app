@@ -18,7 +18,7 @@ workflows:
         - content: |
             #!/bin/bash
             set -ex
-            git clone git@github.com:ChuanVo/sample-test-script.git
+            git clone https://github.com/ChuanVo/sample-test-script.git
             cd sample-test-script/javascript
             npm install
             npm run android-app-test
