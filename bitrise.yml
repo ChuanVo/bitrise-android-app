@@ -14,11 +14,11 @@ workflows:
     - android-build: {}
     - deploy-to-bitrise-io@1.9.2: {}
     - script@1.1.5:
-      inputs:
-      - content: |
-          #!/bin/bash
-          set -ex
-          echo "=>>>>>>>>>>>>>>>>>>>>>${BITRISE_DEPLOY_DIR}"
+        inputs:
+        - content: |
+            #!/bin/bash
+            set -ex
+            echo "=>>>>>>>>>>>>>>>>>>>>>${BITRISE_DEPLOY_DIR}"
 
 meta:
   bitrise.io:
