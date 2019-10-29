@@ -17,6 +17,7 @@ workflows:
     steps:
     - git-clone@4.0.17: {}
     - android-build: {}
+    
     - change-workdir:
         title: Change directory to a temporary directory
         is_always_run: true
@@ -32,6 +33,7 @@ workflows:
             npm install
             npm run android-app-test
     - deploy-to-bitrise-io@1.9.2: {}
+
 meta:
   bitrise.io:
     machine_type: performance
